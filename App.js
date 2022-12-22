@@ -1,6 +1,13 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Smartlook from 'react-native-smartlook-analytics'
+
+Smartlook.instance.preferences.setProjectKey(
+  'your-unique-project-key'
+);
+Smartlook.instance.start();
+
 export default function App() {
   return (
     <View style={styles.container}>
